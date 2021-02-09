@@ -2,14 +2,21 @@
 	"name": "parcel-name-error",
 	"version": "1.0.0",
 	"description": "",
-	"main": "index.js",
 	"scripts": {
-		"build": "parcel build --dist-dir dist './src/entries/*.js'",
+		"build": "parcel build --dist-dir dist --public-url /react --no-cache './src/entries/*.js'",
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},
 	"author": "",
 	"license": "ISC",
 	"dependencies": {
-		"parcel": "^2.0.0-nightly.573"
+		"parcel": "^2.0.0-nightly.573",
+		"react": "17.0.1",
+		"react-dom": "17.0.1"
+	},
+	"devDependencies": {
+		"@types/react": "^17.0.1",
+		"@types/react-dom": "^17.0.0",
+		"postcss": "8.2.5",
+		"postcss-modules": "4.0.0"
 	}
 }
